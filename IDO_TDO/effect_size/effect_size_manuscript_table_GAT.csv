@@ -1,0 +1,65 @@
+Endpoint,Architecture,Family,RF,"GNN (mean +/- SD, 10 runs)",Difference [95% CI],Hedges g,p (raw),"p (Holm, family)","q (BH, family)","p (Holm, all 96)",Interpretation
+Accuracy,GCN,classification metrics (primary),0.6,0.572 +/- 0.044,"-0.028 [-0.061, +0.005]",-0.56,0.084,1.000,0.104,1.000,not significant
+Accuracy,GAT,classification metrics (primary),0.6,0.57 +/- 0.013,"-0.030 [-0.039, -0.020]",-1.99,<0.001,0.003,<0.001,0.005,significant but small
+Accuracy,GINE,classification metrics (primary),0.6,0.572 +/- 0.043,"-0.028 [-0.061, +0.005]",-0.56,0.086,1.000,0.104,1.000,not significant
+Accuracy,GraphSAGE,classification metrics (primary),0.6,0.571 +/- 0.031,"-0.029 [-0.053, -0.006]",-0.81,0.021,0.405,0.029,1.000,not significant
+MCC,GCN,classification metrics (primary),0.45,0.416 +/- 0.055,"-0.034 [-0.076, +0.007]",-0.54,0.093,1.000,0.109,1.000,not significant
+MCC,GAT,classification metrics (primary),0.45,0.417 +/- 0.019,"-0.033 [-0.048, -0.018]",-1.47,<0.001,0.017,0.001,0.039,"significant, practically meaningful"
+MCC,GINE,classification metrics (primary),0.45,0.406 +/- 0.053,"-0.044 [-0.083, -0.004]",-0.72,0.035,0.493,0.046,1.000,not significant
+MCC,GraphSAGE,classification metrics (primary),0.45,0.411 +/- 0.044,"-0.039 [-0.073, -0.006]",-0.77,0.026,0.405,0.035,1.000,not significant
+Macro AUROC,GCN,AUROC/AUPRC (secondary),0.813,0.807 +/- 0.015,"-0.006 [-0.017, +0.005]",-0.33,0.279,1.000,0.360,1.000,not significant
+Macro AUROC,GAT,AUROC/AUPRC (secondary),0.813,0.801 +/- 0.018,"-0.012 [-0.025, +0.001]",-0.58,0.075,1.000,0.188,1.000,not significant
+Macro AUROC,GINE,AUROC/AUPRC (secondary),0.813,0.785 +/- 0.013,"-0.028 [-0.038, -0.018]",-1.82,<0.001,0.005,0.002,0.010,significant but small
+Macro AUROC,GraphSAGE,AUROC/AUPRC (secondary),0.813,0.8 +/- 0.021,"-0.013 [-0.029, +0.003]",-0.54,0.095,1.000,0.212,1.000,not significant
+Macro AUPRC,GCN,AUROC/AUPRC (secondary),0.569,0.577 +/- 0.025,"+0.008 [-0.011, +0.027]",0.27,0.377,1.000,0.457,1.000,not significant
+Macro AUPRC,GAT,AUROC/AUPRC (secondary),0.569,0.587 +/- 0.021,"+0.017 [+0.001, +0.033]",0.71,0.036,1.000,0.111,1.000,not significant
+Macro AUPRC,GINE,AUROC/AUPRC (secondary),0.569,0.574 +/- 0.021,"+0.005 [-0.011, +0.021]",0.19,0.520,1.000,0.562,1.000,not significant
+Macro AUPRC,GraphSAGE,AUROC/AUPRC (secondary),0.569,0.569 +/- 0.025,"-0.001 [-0.019, +0.018]",-0.02,0.946,1.000,0.946,1.000,not significant
+F1 - AA,GCN,classification metrics (primary),0.57,0.564 +/- 0.053,"-0.006 [-0.046, +0.035]",-0.09,0.759,1.000,0.773,1.000,not significant
+F1 - AA,GAT,classification metrics (primary),0.57,0.585 +/- 0.005,"+0.015 [+0.011, +0.019]",2.66,<0.001,<0.001,<0.001,<0.001,significant but small
+F1 - AA,GINE,classification metrics (primary),0.57,0.533 +/- 0.034,"-0.037 [-0.062, -0.011]",-0.94,0.010,0.218,0.016,0.536,not significant
+F1 - AA,GraphSAGE,classification metrics (primary),0.57,0.565 +/- 0.029,"-0.005 [-0.027, +0.016]",-0.16,0.588,1.000,0.610,1.000,not significant
+F1 - AI,GCN,classification metrics (primary),0.5,0.623 +/- 0.063,"+0.123 [+0.076, +0.170]",1.7,<0.001,0.007,<0.001,0.016,"significant, practically meaningful"
+F1 - AI,GAT,classification metrics (primary),0.5,0.616 +/- 0.032,"+0.116 [+0.091, +0.140]",3.09,<0.001,<0.001,<0.001,<0.001,"significant, practically meaningful"
+F1 - AI,GINE,classification metrics (primary),0.5,0.555 +/- 0.072,"+0.055 [+0.001, +0.109]",0.66,0.048,0.619,0.061,1.000,not significant
+F1 - AI,GraphSAGE,classification metrics (primary),0.5,0.621 +/- 0.053,"+0.121 [+0.081, +0.161]",1.97,<0.001,0.003,<0.001,0.006,"significant, practically meaningful"
+F1 - IA,GCN,classification metrics (primary),0.15,0.254 +/- 0.047,"+0.104 [+0.069, +0.140]",1.92,<0.001,0.003,<0.001,0.007,"significant, practically meaningful"
+F1 - IA,GAT,classification metrics (primary),0.15,0.28 +/- 0.031,"+0.130 [+0.107, +0.153]",3.67,<0.001,<0.001,<0.001,<0.001,"significant, practically meaningful"
+F1 - IA,GINE,classification metrics (primary),0.15,0.295 +/- 0.078,"+0.145 [+0.086, +0.204]",1.62,<0.001,0.010,<0.001,0.022,"significant, practically meaningful"
+F1 - IA,GraphSAGE,classification metrics (primary),0.15,0.24 +/- 0.052,"+0.090 [+0.050, +0.129]",1.49,<0.001,0.016,0.001,0.036,"significant, practically meaningful"
+F1 - II,GCN,classification metrics (primary),0.73,0.601 +/- 0.02,"-0.129 [-0.144, -0.114]",-5.6,<0.001,<0.001,<0.001,<0.001,"significant, practically meaningful"
+F1 - II,GAT,classification metrics (primary),0.73,0.582 +/- 0.022,"-0.148 [-0.165, -0.132]",-5.84,<0.001,<0.001,<0.001,<0.001,"significant, practically meaningful"
+F1 - II,GINE,classification metrics (primary),0.73,0.655 +/- 0.034,"-0.075 [-0.100, -0.049]",-1.93,<0.001,0.003,<0.001,0.007,"significant, practically meaningful"
+F1 - II,GraphSAGE,classification metrics (primary),0.73,0.575 +/- 0.065,"-0.155 [-0.204, -0.106]",-2.06,<0.001,0.002,<0.001,0.004,"significant, practically meaningful"
+AUROC - AA,GCN,AUROC/AUPRC (secondary),0.809,0.786 +/- 0.029,"-0.023 [-0.044, -0.001]",-0.68,0.044,1.000,0.125,1.000,not significant
+AUROC - AA,GAT,AUROC/AUPRC (secondary),0.809,0.806 +/- 0.011,"-0.003 [-0.011, +0.005]",-0.21,0.489,1.000,0.544,1.000,not significant
+AUROC - AA,GINE,AUROC/AUPRC (secondary),0.809,0.759 +/- 0.019,"-0.050 [-0.064, -0.035]",-2.23,<0.001,0.001,<0.001,0.002,"significant, practically meaningful"
+AUROC - AA,GraphSAGE,AUROC/AUPRC (secondary),0.809,0.797 +/- 0.018,"-0.012 [-0.025, +0.002]",-0.56,0.085,1.000,0.201,1.000,not significant
+AUROC - AI,GCN,AUROC/AUPRC (secondary),0.845,0.834 +/- 0.02,"-0.011 [-0.026, +0.004]",-0.49,0.126,1.000,0.227,1.000,not significant
+AUROC - AI,GAT,AUROC/AUPRC (secondary),0.845,0.838 +/- 0.011,"-0.007 [-0.015, +0.001]",-0.58,0.075,1.000,0.188,1.000,not significant
+AUROC - AI,GINE,AUROC/AUPRC (secondary),0.845,0.833 +/- 0.021,"-0.013 [-0.028, +0.003]",-0.52,0.108,1.000,0.220,1.000,not significant
+AUROC - AI,GraphSAGE,AUROC/AUPRC (secondary),0.845,0.825 +/- 0.022,"-0.020 [-0.037, -0.003]",-0.79,0.023,0.672,0.077,1.000,not significant
+AUROC - IA,GCN,AUROC/AUPRC (secondary),0.742,0.791 +/- 0.024,"+0.049 [+0.031, +0.067]",1.78,<0.001,0.006,0.002,0.012,"significant, practically meaningful"
+AUROC - IA,GAT,AUROC/AUPRC (secondary),0.742,0.76 +/- 0.04,"+0.017 [-0.013, +0.048]",0.38,0.225,1.000,0.310,1.000,not significant
+AUROC - IA,GINE,AUROC/AUPRC (secondary),0.742,0.728 +/- 0.027,"-0.015 [-0.035, +0.005]",-0.48,0.131,1.000,0.227,1.000,not significant
+AUROC - IA,GraphSAGE,AUROC/AUPRC (secondary),0.742,0.761 +/- 0.038,"+0.019 [-0.010, +0.048]",0.43,0.174,1.000,0.258,1.000,not significant
+AUROC - II,GCN,AUROC/AUPRC (secondary),0.856,0.818 +/- 0.022,"-0.038 [-0.054, -0.021]",-1.5,<0.001,0.020,0.004,0.035,"significant, practically meaningful"
+AUROC - II,GAT,AUROC/AUPRC (secondary),0.856,0.801 +/- 0.02,"-0.055 [-0.070, -0.039]",-2.33,<0.001,<0.001,<0.001,0.002,"significant, practically meaningful"
+AUROC - II,GINE,AUROC/AUPRC (secondary),0.856,0.82 +/- 0.02,"-0.036 [-0.051, -0.021]",-1.6,<0.001,0.013,0.003,0.024,"significant, practically meaningful"
+AUROC - II,GraphSAGE,AUROC/AUPRC (secondary),0.856,0.815 +/- 0.033,"-0.040 [-0.065, -0.016]",-1.06,0.005,0.167,0.025,0.283,not significant
+AUPRC - AA,GCN,AUROC/AUPRC (secondary),0.561,0.586 +/- 0.049,"+0.024 [-0.012, +0.061]",0.43,0.170,1.000,0.258,1.000,not significant
+AUPRC - AA,GAT,AUROC/AUPRC (secondary),0.561,0.582 +/- 0.035,"+0.020 [-0.006, +0.047]",0.5,0.115,1.000,0.220,1.000,not significant
+AUPRC - AA,GINE,AUROC/AUPRC (secondary),0.561,0.564 +/- 0.03,"+0.002 [-0.021, +0.025]",0.06,0.843,1.000,0.887,1.000,not significant
+AUPRC - AA,GraphSAGE,AUROC/AUPRC (secondary),0.561,0.581 +/- 0.047,"+0.019 [-0.016, +0.055]",0.36,0.246,1.000,0.328,1.000,not significant
+AUPRC - AI,GCN,AUROC/AUPRC (secondary),0.751,0.743 +/- 0.026,"-0.008 [-0.028, +0.011]",-0.28,0.360,1.000,0.450,1.000,not significant
+AUPRC - AI,GAT,AUROC/AUPRC (secondary),0.751,0.743 +/- 0.014,"-0.008 [-0.018, +0.002]",-0.51,0.114,1.000,0.220,1.000,not significant
+AUPRC - AI,GINE,AUROC/AUPRC (secondary),0.751,0.724 +/- 0.029,"-0.028 [-0.050, -0.006]",-0.84,0.018,0.543,0.070,0.893,not significant
+AUPRC - AI,GraphSAGE,AUROC/AUPRC (secondary),0.751,0.739 +/- 0.027,"-0.013 [-0.034, +0.008]",-0.41,0.192,1.000,0.275,1.000,not significant
+AUPRC - IA,GCN,AUROC/AUPRC (secondary),0.213,0.248 +/- 0.071,"+0.035 [-0.018, +0.089]",0.43,0.169,1.000,0.258,1.000,not significant
+AUPRC - IA,GAT,AUROC/AUPRC (secondary),0.213,0.297 +/- 0.055,"+0.084 [+0.042, +0.125]",1.32,0.001,0.046,0.008,0.079,"significant, practically meaningful"
+AUPRC - IA,GINE,AUROC/AUPRC (secondary),0.213,0.267 +/- 0.059,"+0.054 [+0.010, +0.098]",0.8,0.022,0.664,0.077,1.000,not significant
+AUPRC - IA,GraphSAGE,AUROC/AUPRC (secondary),0.213,0.214 +/- 0.039,"+0.001 [-0.028, +0.031]",0.03,0.919,1.000,0.943,1.000,not significant
+AUPRC - II,GCN,AUROC/AUPRC (secondary),0.752,0.732 +/- 0.037,"-0.020 [-0.048, +0.008]",-0.47,0.137,1.000,0.228,1.000,not significant
+AUPRC - II,GAT,AUROC/AUPRC (secondary),0.752,0.724 +/- 0.026,"-0.028 [-0.047, -0.008]",-0.93,0.010,0.329,0.046,0.545,not significant
+AUPRC - II,GINE,AUROC/AUPRC (secondary),0.752,0.743 +/- 0.036,"-0.009 [-0.036, +0.017]",-0.23,0.450,1.000,0.529,1.000,not significant
+AUPRC - II,GraphSAGE,AUROC/AUPRC (secondary),0.752,0.742 +/- 0.04,"-0.010 [-0.040, +0.020]",-0.22,0.472,1.000,0.540,1.000,not significant
